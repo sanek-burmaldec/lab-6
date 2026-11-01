@@ -5,32 +5,37 @@
   <meta name="color-scheme" content="light">
   <title>Замовлення букета</title>
   <style>
-  <body>
-    body { text-align: center; }
-    {
+    body {
       font-family: Arial, sans-serif;
       margin: 20px;
       background-color: #ffffff;
       color: #222222;
+      text-align: center;
     }
+
     img {
+      display: block;
+      margin: 0 auto;
       border: 3px solid #f06292;
       border-radius: 8px;
     }
-    form {  
+
+    form {
       width: 400px;
       margin: 0 auto;
-      text-align: left; 
+      text-align: left;
       padding: 15px;
       background-color: #fce4ec;
       border: 1px solid #f06292;
       border-radius: 8px;
     }
+
     label {
       display: block;
       margin-bottom: 10px;
       color: #222222;
     }
+
     input[type="text"],
     input[type="tel"],
     input[type="email"],
@@ -42,6 +47,7 @@
       padding: 6px;
       box-sizing: border-box;
     }
+
     button {
       padding: 8px 20px;
       background-color: #d81b60;
@@ -54,18 +60,25 @@
 </head>
 <body>
   <h2>Квітковий магазин «Букет»</h2>
-  <img src="images/flower.svg" alt="Рожева квітка" width="300" height="400" title="Наша квітка">
+
+  <img src="flower.jpg.jpg" alt="Рожева квітка" width="300" height="400" title="Наша квітка">
+
   <h3>Форма замовлення букета</h3>
+
   <form action="#" method="post">
+
     <label>Ім'я:
       <input type="text" name="username" required>
     </label>
+
     <label>Телефон:
       <input type="tel" name="phone" required>
     </label>
+
     <label>Email:
       <input type="email" name="email">
     </label>
+
     <label>Вид букета:
       <select name="bouquet">
         <option>Троянди</option>
@@ -74,19 +87,25 @@
         <option>Мікс</option>
       </select>
     </label>
+
     <label>Кількість букетів:
       <input type="number" name="count" min="1" max="20" value="1">
     </label>
+
     <label>Дата доставки:
       <input type="date" name="date">
     </label>
+
     <p>Спосіб отримання:</p>
     <label><input type="radio" name="delivery" value="pickup" checked> Самовивіз</label>
     <label><input type="radio" name="delivery" value="courier"> Доставка кур'єром</label>
+
     <label><input type="checkbox" name="card"> Додати листівку</label>
+
     <label>Побажання:
       <textarea name="comment" rows="4" placeholder="Ваші побажання..."></textarea>
     </label>
+
     <button type="submit">Замовити</button>
   </form>
 </body>
